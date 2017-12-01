@@ -1,0 +1,12 @@
+<app-private-nav></app-private-nav>
+<div class="container">
+	<div class="opaque-bg cover-pic-area top-margin">
+		<app-coverpic #appCoverPic ></app-coverpic>
+	</div>
+	<div class="cover-profile-pic" [ngStyle]="{ 'background-image': 'url(' + profilePic + ')'}">
+		<div class='title-bar row no-margin white-fonts full-name'>{{fullName}}</div> 
+		<ng-container *ngIf="isMyProfile">
+			<b>Its me</b>
+		</ng-container>
+	</div>
+</div>
